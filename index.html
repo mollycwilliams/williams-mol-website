@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>williamsmol</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">molly williams</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">about</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#about">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">molly williams</div>
+        <div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">about</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
+                <li><a href="#about" onclick="toggleMenu()">contact</a></li>
+                </div>
+            </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/arrow.png/noob.png" alt="noob">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">hi i'm</p>
+            <h1 class="title"> molly</h1>
+            <p class="section__text__p2">computer science and math student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('./assets/WILLIAMS_RESUME.pdf')">
+                    download resume
+                </button>
+                <button class="btn btn-color-1" 
+                onclick="location.href='./#contact'">
+                    contact info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="linkedin"
+                class="icon" onclick="location.href='https://linkedin.com/in/molly-claire-williams'">
+                <img src="./assets/github.png" alt="github"
+                class="icon" onclick="location.href='https://github.com/mollycwilliams'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">molly</p>
+        <h1 class="title">more about me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/noob.png"
+                alt="noob"
+                class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/noob.png"
+                        alt="noob"
+                        class="icon"
+                        />
+                        <h3>personal life</h3>
+                        <p>from berlin, connecticut</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png"
+                        alt="education"
+                        class="icon"
+                        />
+                        <h3>education</h3>
+                        <p>northeastern university, boston, ma, khoury college of computer sciences</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>candidate for  a B.S. in computer science, minor in mathematics</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow"
+        onclick="location.href='./#experience'"/>
+    </section>
+    <section id="projects">
+        <p class="section__text_p1">browse my projects</p>
+        <h1 class="title">projects</h1>
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="empty.png"
+                    alt="stock project"
+                    class="stock-project-img"/>
+                </div>
+                <h2 class="experience-sub-title binge">api stock market simulator</h2>
+                <p>
+                    - Developed a stock trading application that allows users to build and manage portfolios, simulating trades and
+                      performing custom analyses based on current stock data.
+                </p>
+                <p>
+                    - Integrated external APIs to fetch up-to-date stok prices, historical data, and market trends.
+                </p>
+                <p>
+                    - Utilized Java, Swing, and IntelliJ for application development.
+                </p>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="empty.png"
+                    alt="stock project"
+                    class="binge-boston-img"/>
+                </div>
+                <h2 class="experience-sub-title binge">binge boston website</h2>
+                <p>
+                    - Designing a platform that helps users discover trending meals and restaraunts in Boston, curating personalized
+                    restaraunt lists based on their preferences.
+                </p>
+                <p>
+                    - Developing using JavaScript, React.js, and Node.js for front-end and back-end development
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="title">contact me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <p><a href="mailto:williams.mol@northeastern.edu">williams.mol@northeastern.edu</a></p>
+            </div>
+        </div>     
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <p>cell: (860)-877-7471</p>
+            </div>
+        </div>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <p><a href="https://www.linkedin.com/molly-claire-williams">linkedin</a></p>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#about">contact</a></li>
+                </ul>    
+            </div>
+        </nav>
+        <p>williamsmol 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
