@@ -5,4 +5,51 @@
     #hamburger-nav {
         display: flex;
     }
+
+    .section-container {
+        flex-direction: column;
+        margin: 0 1rem; 
+        gap: 2rem;
+    }
+
+    img, video {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto; 
+    }
+
+    p, h1, h2, h3 {
+        font-size: 90%; 
+    }
+
+    section {
+        margin: 0 1rem;
+        padding: 2rem 0;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .btn {
+        width: 100%; 
+        max-width: 300px;
+    }
+
+    .section__pic-container {
+        width: 100%;
+        max-width: 300px; 
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .about-pic {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 1rem;
+        margin: 0 auto;
+    }
 }
